@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-left">
+            <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+            <div class="logo">Medium</div>
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-right">
+            <button class="btn btn-get-app">
+                <i class="fa-solid fa-mobile-screen"></i> Get app
+            </button>
+            <a href="#" class="nav-link write-link">
+                <i class="fa-regular fa-pen-to-square"></i> Write
+            </a>
+            <button class="nav-btn bell-btn">
+                <i class="fa-regular fa-bell"></i>
+            </button>
+            <div class="profile-pic">P</div>
+        </div>
+    </header>
+
+    <div class="layout-below-navbar">
+        <div id="side-menu" class="side-menu">
+            <div class="side-menu-inner">
+                <ul class="side-menu-list">
+                    <li><i class="fa-solid fa-house"></i> Home</li>
+                    <li><i class="fa-regular fa-bookmark"></i> Library</li>
+                    <li><i class="fa-regular fa-user"></i> Profile</li>
+                    <li><i class="fa-regular fa-file-lines"></i> Stories</li>
+                    <li><i class="fa-solid fa-chart-simple"></i> Stats</li>
+                </ul>
+                <hr class="side-menu-hr">
+                <div class="side-menu-bottom">
+                    <p>Find writers and publications to follow.</p>
+                    <a href="#">See suggestions</a>
+                </div>
+            </div>
+        </div>
+        <div id="page-wrapper" class="page-wrapper">
+
+    <div class="yellow-banner">
+        <span class="welcome-badge">Welcome Offer</span>
+        <span class="banner-text">Access to everything. Now up to 30% off. <a href="#" class="upgrade-link">Upgrade now</a></span>
+    </div>
+
+    <main class="main-content">
+        <div class="content-left">
+            <div class="tabs">
+                <span class="tab active" id="for-you-tab">For you</span>
+                <span class="tab" id="featured-tab">Featured</span>
+            </div>
+            
+            <div id="for-you-content" class="articles-list">
+                <!-- Article 1 -->
+                <article class="article-card">
+                    <div class="article-info">
+                        <div class="article-meta">
+                            <span class="author-icon dsc">DSC</span>
+                            <span class="author-name">In <a href="">Data Science Collective</a> by <a href="">Marina Wyss</a></span>
+                            <span class="article-date">· Feb 23</span>
+                        </div>
+                        <h2 class="article-title">Should You Still Learn to Code in 2026?</h2>
+                        <p class="article-subtitle">The answer isn't as obvious as I used to believe.</p>
+                        <div class="article-footer">
+                            <div class="footer-left">
+                                <span class="stars"><i class="fa-solid fa-star"></i></span>
+                                <span class="claps"><i class="fa-solid fa-hands-clapping"></i> 5K</span>
+                                <span class="comments"><i class="fa-regular fa-comment"></i> 259</span>
+                            </div>
+                            <div class="footer-right">
+                                <button><i class="fa-regular fa-bookmark"></i></button>
+                                <button><i class="fa-solid fa-ellipsis"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Article Image" class="article-img">
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card">
+                    <div class="article-info">
+                        <div class="article-meta">
+                            <span class="author-icon wac" style="background-color: transparent;"><img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=24&q=80" style="width:100%; border-radius:4px;"></span>
+                            <span class="author-name">In <a href="">Life</a> by <a href="">Darius Foroux</a></span>
+                            <span class="article-date">· May 8</span>
+                        </div>
+                        <h2 class="article-title">How to Do Hard Things When You Have Zero Motivation</h2>
+                        <p class="article-subtitle">Tricks create novelty. These five strategies create consistency.</p>
+                        <div class="article-footer">
+                            <div class="footer-left">
+                                <span class="stars"><i class="fa-solid fa-star"></i></span>
+                                <span class="claps"><i class="fa-solid fa-hands-clapping"></i> 9.1K</span>
+                                <span class="comments"><i class="fa-regular fa-comment"></i> 228</span>
+                            </div>
+                            <div class="footer-right">
+                                <button><i class="fa-regular fa-bookmark"></i></button>
+                                <button><i class="fa-solid fa-ellipsis"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Article Image" class="article-img">
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card">
+                    <div class="article-info">
+                        <div class="article-meta">
+                            <span class="author-icon dsc" style="background-color: #2b6cb0;">P</span>
+                            <span class="author-name">In <a href="">Programming</a> by <a href="">Jane Doe</a></span>
+                            <span class="article-date">· Jun 1</span>
+                        </div>
+                        <h2 class="article-title">Mastering React Hooks in 2026</h2>
+                        <p class="article-subtitle">A deep dive into custom hooks and state management</p>
+                        <div class="article-footer">
+                            <div class="footer-left">
+                                <span class="stars"><i class="fa-solid fa-star"></i></span>
+                                <span class="claps"><i class="fa-solid fa-hands-clapping"></i> 12K</span>
+                                <span class="comments"><i class="fa-regular fa-comment"></i> 412</span>
+                            </div>
+                            <div class="footer-right">
+                                <button><i class="fa-regular fa-bookmark"></i></button>
+                                <button><i class="fa-solid fa-ellipsis"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Article Image" class="article-img">
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card">
+                    <div class="article-info">
+                        <div class="article-meta">
+                            <span class="author-icon wac" style="background-color: #55acee;">T</span>
+                            <span class="author-name">In <a href="">Tech Trends</a> by <a href="">John Smith</a></span>
+                            <span class="article-date">· Apr 12</span>
+                        </div>
+                        <h2 class="article-title">The Future of AI: What to Expect Next Year</h2>
+                        <p class="article-subtitle">Predictive models are getting better, but are we ready?</p>
+                        <div class="article-footer">
+                            <div class="footer-left">
+                                <span class="stars"><i class="fa-solid fa-star"></i></span>
+                                <span class="claps"><i class="fa-solid fa-hands-clapping"></i> 34K</span>
+                                <span class="comments"><i class="fa-regular fa-comment"></i> 890</span>
+                            </div>
+                            <div class="footer-right">
+                                <button><i class="fa-regular fa-bookmark"></i></button>
+                                <button><i class="fa-solid fa-ellipsis"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Article Image" class="article-img">
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card">
+                    <div class="article-info">
+                        <div class="article-meta">
+                            <span class="author-icon wac" style="background-color: #1da1f2;">M</span>
+                            <span class="author-name">In <a href="">Design Systems</a> by <a href="">Alice Ray</a></span>
+                            <span class="article-date">· Mar 30</span>
+                        </div>
+                        <h2 class="article-title">Why Clean UI Matters More Than Ever</h2>
+                        <p class="article-subtitle">Simplicity is the ultimate sophistication in web design.</p>
+                        <div class="article-footer">
+                            <div class="footer-left">
+                                <span class="stars"><i class="fa-solid fa-star"></i></span>
+                                <span class="claps"><i class="fa-solid fa-hands-clapping"></i> 8.5K</span>
+                                <span class="comments"><i class="fa-regular fa-comment"></i> 150</span>
+                            </div>
+                            <div class="footer-right">
+                                <button><i class="fa-regular fa-bookmark"></i></button>
+                                <button><i class="fa-solid fa-ellipsis"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Article Image" class="article-img">
+                </article>
+            </div>
+
+            <div id="featured-content" class="featured-empty" style="display: none;">
+                <h3>No featured stories</h3>
+                <p>Featured stories from the publications you follow will appear here.</p>
+                <a href="#">View recommended publications</a>
+            </div>
+        </div>
+
+        <aside class="content-right">
+            <div class="staff-picks">
+                <h3>Staff Picks</h3>
+                <div class="staff-pick-item">
+                    <div class="article-meta">
+                        <span class="author-icon small tasty">T</span>
+                        <span class="author-name">In Tastyble by Verde Curated Lifestyle</span>
+                    </div>
+                    <h4 class="staff-pick-title">How To Save A Summer: What I Dried All Summer Long</h4>
+                    <span class="left-article-date">3d ago</span>
+                </div>
+                <div class="staff-pick-item">
+                    <div class="article-meta">
+                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=24&q=80" alt="Author" class="author-pic">
+                        <span class="author-name">John Gorman</span>
+                    </div>
+                    <h4 class="staff-pick-title">Participation Is Reality</h4>
+                    <span class="left-article-date">Jun 19</span>
+                </div>
+                <div class="staff-pick-item">
+                    <div class="article-meta">
+                        <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-4.0.3&auto=format&fit=crop&w=24&q=80" alt="Author" class="author-pic">
+                        <span class="author-name">Mark Andrews</span>
+                    </div>
+                    <h4 class="staff-pick-title">The Beautiful Accident</h4>
+                    <span class="left-article-date">Jun 17</span>
+                </div>
+                <a href="#" class="see-full-list">See the full list</a>
+            </div>
+
+            <div class="recommended-topics">
+                <h3>Recommended topics</h3>
+                <div class="topics-list">
+                    <button class="topic-btn">Data Science</button>
+                    <button class="topic-btn">Self Improvement</button>
+                    <button class="topic-btn">Writing</button>
+                    <button class="topic-btn">Relationships</button>
+                    <button class="topic-btn">Cryptocurrency</button>
+                </div>
+            </div>
+        </aside>
+    </main>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
