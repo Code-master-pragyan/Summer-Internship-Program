@@ -41,7 +41,7 @@ ul {
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
@@ -54,6 +54,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 0.65rem;
+    margin-left: 6%;
 }
 
 .logo-icon {
@@ -84,6 +85,12 @@ ul {
 }
 
 /* Nav Links */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -144,18 +151,31 @@ ul {
     align-items: center;
     padding: 8rem 2rem 4rem;
     overflow: hidden;
-    background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 50%, #1c1108 100%);
+    background-color: #0d0d0d;
+}
+
+/* Pseudo-element to scale the background and crop the logo */
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('img.png') no-repeat center center;
+    background-size: cover;
+    transform: scale(1.1); /* slightly scale up to hide the watermark on the edges */
+    z-index: 0;
 }
 
 /* Dark overlay with subtle texture feel */
-.hero-overlay {
+/* .hero-overlay {
     position: absolute;
     inset: 0;
     background:
         radial-gradient(ellipse 70% 60% at 70% 50%, rgba(232, 102, 26, 0.436) 0%, transparent 70%),
         radial-gradient(ellipse 50% 50% at 20% 80%, rgba(232, 101, 26, 0.04) 0%, transparent 60%);
+    background-color: rgba(0, 0, 0, 0.2);
     pointer-events: none;
-}
+    z-index: 1;
+} */
 
 .hero-content {
     position: relative;
